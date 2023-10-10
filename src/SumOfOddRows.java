@@ -8,13 +8,11 @@ public class SumOfOddRows {
             throw new IllegalArgumentException("Input matrix is null!");
         }
 
-        int rows = matrix.length;
-        int cols = matrix[0].length;
         int sum = 0;
 
-        for (int i = 0; i < rows; i++) {
+        for (int i = 0; i < matrix.length; i++) {
             if (i % 2 == 1) {    //zkontroluj, jestli je matice lichá, s 0 == sudá
-                for (int j = 0; j < cols; j++) {
+                for (int j = 0; j < matrix[0].length; j++) {
                     sum += matrix[i][j];
                 }
             }

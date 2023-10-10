@@ -12,7 +12,8 @@ public class MatrixAddition {
         int[][] firstMat = {{1, 2, 3, 4}};
         int[][] secondMat = {{5, 6, 7, 8}};
 
-        int[][] sum = matrix(firstMat, secondMat);
+        int[][] sum = matrix(firstMat, secondMat); //ukládáme matice do sum
+        //iteruj mi matrix (matice) a vytiskni mi ho ve Stringu
         for (int i = 0; i < sum.length; i++) {
             for (int j = 0; j < sum[0].length; j++) {
             }
@@ -25,11 +26,12 @@ public class MatrixAddition {
         if (firstMatrix.length != secondMatrix.length || firstMatrix[0].length != secondMatrix[0].length) {
             throw new IllegalArgumentException("Invalid input: Matrices must have the same number of rows and columns.");
         }
+        //uložím si matice do proměnných rows / cols - zde hlavně kvůli lepší čitelnosti
         int rows = firstMatrix.length;
         int cols = firstMatrix[0].length;
 
         int[][] sum = new int[rows][cols];
-
+        //procházej smyčkami a přičitej indexi řádků a sloupců do sum
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 sum[i][j] = firstMatrix[i][j] + secondMatrix[i][j];

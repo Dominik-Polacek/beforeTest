@@ -14,8 +14,8 @@ public class MatrixOfShorterStrings {
         //procházej 2D array
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < numCols; j++) {
-                String firstWord = firstMatrice[i][j];
-                String secondWord = secondMatrice[i][j];
+                String firstWord = firstMatrice[i][j]; //uložím si první matici do Stringu
+                String secondWord = secondMatrice[i][j]; //uložím si druhou matici do Stringu
                 //podmínka na nalezení "nejkratšího" slova
                 if (firstWord.length() <= secondWord.length()) {
                     smallestWord[i][j] = firstWord; //ulož mi do 2D pole 1.slovo

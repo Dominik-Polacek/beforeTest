@@ -18,7 +18,7 @@ public class ReadFile {
     public static List<String> readFile(String filePath) {
         List<String> output;
         try {
-            output = Files.readAllLines(Path.of(filePath));
+            output = Files.readAllLines(Path.of(filePath));  //do listu přidej cestu
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
