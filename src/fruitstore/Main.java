@@ -12,7 +12,7 @@ public class Main {
     public static void main(String[] args) {
         FruitStore fruitStore = new FruitStore();
 
-        Color red = new Color(255, 0, 0, "Red");
+        Color red = new Color(265, 0, 0, "Red");
         Color redBlue = new Color(255, 0, 125, "Red");
         Color green = new Color(10, 255, 30, "Green");
         Color blue = new Color(0, 0, 230, "Blue");

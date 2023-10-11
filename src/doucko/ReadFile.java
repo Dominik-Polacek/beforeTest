@@ -20,7 +20,7 @@ public class ReadFile {
         try {
             output = Files.readAllLines(Path.of(filePath));  //do listu přidej cestu
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("File doesn't exist.");
         }
         return output;
     }
@@ -29,7 +29,7 @@ public class ReadFile {
         try {
             Files.write(Paths.get(filename), content); //StandardOpenOption.Append (přidání do souboru)
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Couldn't write to file " + filename);
         }
     }
 }

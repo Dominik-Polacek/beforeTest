@@ -8,26 +8,26 @@ public class Color {
     private int green;
     private int blue;
 
-    public  Color (int red, int green, int blue,String name){
-    this.name = name;
+    public Color(int red, int green, int blue, String name) {
+        this.name = name;
+        if ((red < 0 || red > 255) || (green < 0 || green > 255) || (blue < 0 || blue > 255)) {
+            throw new IllegalArgumentException("Your color value must be between 0 and 255!.");
+        }
     }
-    public String getName () {
-       return this.name = name;
+
+    public String getName() {
+        return this.name = name;
     }
 
     public void getRed(int red) {
         this.red = red;
     }
-    public void setRed(int red) {
-        if (red < 0 || red > 255) {
-            throw new IllegalArgumentException("Red value must be between 0 and 255.");
-        }
-        this.red = red;
-    }
+
 
     public void getGreen(int green) {
         this.green = green;
     }
+
     public void setGreen(int green) {
         if (green < 0 || green > 255) {
             throw new IllegalArgumentException("Green value must be between 0 and 255.");
@@ -38,6 +38,7 @@ public class Color {
     public void getBlue(int blue) {
         this.blue = blue;
     }
+
     public void setBlue(int blue) {
         if (blue < 0 || blue > 255) {
             throw new IllegalArgumentException("Blue value must be between 0 and 255.");
