@@ -7,6 +7,8 @@ public class MatrixAddition {
 //    The method should only add matrices with the same number of rows and columns
 //    and throw an exception with"Invalid input" message on invalid input.
 
+    // udělej 2 matice a sečti jejich sloupce
+
     public static void main(String[] args) {
 
         int[][] firstMat = {{1, 2, 3, 4}};

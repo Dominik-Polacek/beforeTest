@@ -1,7 +1,7 @@
 package doucko;
 
 import java.util.Arrays;
-
+//otoč mi matici
 public class MatrixTranspose {
     public static void main(String[] args) {
         int[][] matrix = new int[][]{
@@ -19,9 +19,9 @@ public class MatrixTranspose {
 
         int[][] omg = transpose(matrix);
 
-        for (int i = 0; i < omg.length; i++) {
-            System.out.println(Arrays.toString(omg[i]));
-        }
+//        for (int i = 0; i < omg.length; i++) {
+//            System.out.println(Arrays.toString(omg[i]));
+//        }
     }
 
     public static int[][] transpose(int[][] m) {

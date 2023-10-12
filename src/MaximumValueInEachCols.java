@@ -1,4 +1,6 @@
 public class MaximumValueInEachCols {
+
+    //hledej maximum hodnotu v každým sloupci
     public static int[] maxRows(int[][] matrix) {
         int[] arr = new int[matrix.length];
 

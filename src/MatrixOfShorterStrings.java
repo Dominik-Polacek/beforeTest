@@ -3,6 +3,8 @@ public class MatrixOfShorterStrings {
     // of strings as input and returns a new matrix made of the shorter string at every position.
     // If strings has the same length, use string in the first input.
     //INPUT in TEST
+
+    //najdi mi nejmenší slova v celým matrixu
     public static String[][] matrix(String[][] firstMatrice, String[][] secondMatrice) {
 
         //Najdi mi minimum (slova) v řádcích a sloupcích v první i druhé matici

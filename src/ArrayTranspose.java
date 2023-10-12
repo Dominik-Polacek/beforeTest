@@ -4,6 +4,8 @@ public class ArrayTranspose {
     // in which the rows and columns are swapped. That is, the first row of the original matrix
     // becomes the first column of the new matrix, the second row becomes the second column, and so on.
     //input in TEST
+
+    //otoč mi matici
     public static int [][] transpose(int [][] matrix){
         int rows = matrix.length;
         int cols = matrix[0].length;

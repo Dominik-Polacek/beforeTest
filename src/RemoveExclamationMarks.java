@@ -1,6 +1,6 @@
 public class RemoveExclamationMarks {
     //Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
-
+    //najdi mi ve slově stringu znak, který se nerovná ! a zapiš ho = vše kromě tohohle znaku
     public static String removeExclamationMarks(String s) {
         StringBuilder result = new StringBuilder();
         //projdi forloop pro každý znak(c) ve Stringu s a kontroluj, jestli se nerovná znaku !

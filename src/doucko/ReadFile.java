@@ -15,6 +15,7 @@ public class ReadFile {
         writeFile("fileio.txt", fileContent);
     }
 
+    //vem soubor a načti ho
     public static List<String> readFile(String filePath) {
         List<String> output;
         try {

@@ -3,6 +3,8 @@ public class Array2DSum {
 //    where the first row consists of the sum of each row of the input array,
 //    and the second row consists of the sum of each column of the input array.
 
+
+    //sečti mi všechny řádky, následně všechny sloupce v matici
     public static int[][] sumRowsAndColumns(int[][] matrix) {
         //Zjistíme počet řádků a sloupců vstupní matice.
         int rows = matrix.length;
